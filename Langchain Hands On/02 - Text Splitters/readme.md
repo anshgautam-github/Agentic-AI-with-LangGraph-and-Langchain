@@ -1,9 +1,26 @@
-So, in the part 1 we saw how to load the documents 
-Now , in this part we will see -> how to convert the documents into chunks of texts 
+# 📚 Document Chunking with LangChain
 
-Again , in langchain we have lots of ways to do this 
+In **Part 1**, we learned how to **load documents**.  
+Now, in this part, we’ll explore how to **convert documents into smaller chunks of text**.
 
-WHY DO WE DO THIS ?
-Every LLM model has a limitation of the context size, in order to take care of that we have to divide this doc into smaller text chunks.
+---
 
-In order to use difffernt types of text splitters we require this library -> langchain-text-splitters
+## ✨ Why Do We Chunk Documents?
+Large Language Models (**LLMs**) have a **context size limitation** – meaning they cannot process very large documents all at once.  
+
+To overcome this, we break the document into **smaller, manageable chunks** of text.  
+
+This ensures:
+- ✅ Better handling of large documents  
+- ✅ Efficient retrieval and processing  
+- ✅ Improved performance in downstream tasks (e.g., Q&A, summarization)  
+
+---
+
+## 🛠️ How to Split Text in LangChain
+LangChain provides multiple ways to **split text into chunks** using different **text splitters**.  
+
+First, install the required library:
+
+```bash
+pip install langchain-text-splitters
